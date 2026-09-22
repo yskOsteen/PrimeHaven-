@@ -1,0 +1,123 @@
+body {
+    background-image: url('../Inventory /em.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+#HomeNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+#HomeNav a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+#logo {
+    list-style: none;
+}
+
+#logo li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#products {
+    display: flex;
+    gap: 20px; /* Adds spacing between product cards */
+    padding: 20px;
+}
+
+.products {
+    background-color: rgba(9, 121, 105, 0.45); 
+    
+    /* Blurs the background image directly behind the container */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Glassmorphism accents */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* Glassmorphism styling for product images */
+.products img {
+    background-color: rgba(255, 255, 255, 0.15); /* Light glass tint behind the image */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 8px; /* Inner padding around image subject */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05); /* Reduced scale slightly for smoother UI layout */
+    background-color: rgba(255, 255, 255, 0.25); /* Glows slightly on hover */
+    border-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(90, 61, 128);
+    color: white;
+    transform: scale(1.1); /* Reduced scale slightly to avoid text overflowing */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Contact Info Section - Converted to Glassmorphism */
+#contactinfo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    
+    /* Replaced solid #0F1B2E with semi-transparent dark glass overlay */
+    background-color: rgba(15, 27, 46, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+
+    text-align: center;
+    margin: 60px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+/* Fixed selector: replaced custom element 'contactButton' with class '.contactButton' */
+#contactinfo .contactButton,
+#contactinfo button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contactinfo .contactButton:hover,
+#contactinfo button:hover {
+    background-color: #0364f5;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 12px rgba(3, 100, 245, 0.6);
+}
