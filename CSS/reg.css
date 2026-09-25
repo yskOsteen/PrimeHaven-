@@ -1,0 +1,99 @@
+/* Page Background */
+body {
+    background-image: url('../Inventory /em.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: sans-serif; /* Clean font for readability */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Form Container - Blended Overlay */
+form {
+    /* Replaced solid #097969 with semi-transparent emerald tint */
+    background-color: rgba(9, 121, 105, 0.45); 
+    
+    /* Blurs the background image directly behind the form */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Glassmorphism accents */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    
+    width: 60%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+legend {
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Inputs & Selects - Blended Style */
+input[type=text], 
+input[type=email], 
+input[type=password], 
+input[type=number], 
+input[type=date], 
+input[type=datetime-local], 
+select, 
+textarea {
+    width: 100%;
+    /* Replaced solid white inputs with semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 10px 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type=text], 
+input[type=email], 
+input[type=password], 
+input[type=number], 
+input[type=date], 
+input[type=datetime-local], 
+select {
+    height: 40px; /* Increased slightly so text isn't cramped with padding */
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Input Focus Effect */
+input:focus, select:focus, textarea:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Style Dropdown Options */
+select option {
+    background-color: #097969; /* Solid background for dropdown menus so text remains readable */
+    color: #ffffff;
+}
+
+/* Placeholder Visibility */
+::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
